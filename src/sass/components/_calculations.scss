@@ -1,0 +1,30 @@
+.calculation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 15px 5px;
+}
+
+.move-container, .watch-container {
+  padding: 10px;
+  color: $text-color;
+  display: flex;
+  justify-content: space-between;
+  @include font ($style: normal, $weight: 600, $size: 2.6rem, $height: 3.0rem)
+}
+
+.move-container__text, .watch-container__text {
+  margin-right: 20px;
+}
+
+.move-container__count {
+  min-width: 40px;
+  color: $btn-hover;
+}
+
+.watch-container__watch {
+  min-width: 90px;
+  color: $btn-hover;
+}
+

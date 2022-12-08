@@ -1,0 +1,11 @@
+.header {
+  background-color: $header-backgr;
+  padding: 20px;
+  color: $text-color;
+}
+
+.header__greeting {
+  margin: 0 auto;
+  text-align: center;
+  @include font($style: normal, $weight: 700, $size: 2.0rem, $height: 3.5rem)
+}

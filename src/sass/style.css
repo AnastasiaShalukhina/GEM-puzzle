@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.button {
+  max-width: 300px;
+  padding: 10px;
+  color: #383838;
+  border: 2px solid #383838;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+}
+@media (max-width: 768px) {
+  .button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+.button:not(:last-child) {
+  margin-right: 20px;
+}
+.button:hover {
+  background-color: #fbec5d;
+}
+.button:active {
+  background-color: #fffc49;
+}
+
+.header {
+  background-color: #ABCDEF;
+  padding: 20px;
+  color: #383838;
+}
+
+.header__greeting {
+  margin: 0 auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.wrapper {
+  max-width: 1280px;
+  padding: 12px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    max-width: 320px;
+  }
+}
+
+.main {
+  background-color: #4285B4;
+}
+
+.regulation {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .regulation {
+    flex-wrap: wrap;
+  }
+}
+
+.calculation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 15px 5px;
+}
+
+.move-container, .watch-container {
+  padding: 10px;
+  color: #383838;
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+
+.move-container__text, .watch-container__text {
+  margin-right: 20px;
+}
+
+.move-container__count {
+  min-width: 40px;
+  color: #fbec5d;
+}
+
+.watch-container__watch {
+  min-width: 90px;
+  color: #fbec5d;
+}
+
+.game-field {
+  width: 404px;
+  height: 404px;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #383838;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .game-field {
+    width: 284px;
+    height: 284px;
+  }
+}
+
+.block {
+  position: absolute;
+  background-color: #fbec5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #383838;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+@media (max-width: 768px) {
+  .block {
+    width: 70px;
+    height: 70px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+.description__text {
+  max-width: 300px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #fbec5d;
+  text-align: justify;
+}
+
+.audio-form {
+  text-align: center;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.modal-congratulation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ABCDEF;
+  color: #fffc49;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.modal-congratulation .modal-congratulation__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100%;
+}
+.modal-congratulation .modal-congratulation__wrapper .modal-congratulation__text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+}
+.modal-congratulation .modal-congratulation__wrapper .modal-congratulation__button {
+  width: 100px;
+  padding: 20px 0;
+  border: 1px solid #fffc49;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal_visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

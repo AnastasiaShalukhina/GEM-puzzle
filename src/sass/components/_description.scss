@@ -1,0 +1,14 @@
+.description__text {
+  max-width: 300px;
+  margin: 0 auto;
+  @include font ($style: normal, $weight: 500, $size: 2.4rem, $height: 3.2rem);
+  color: $btn-hover;
+  text-align: justify;
+}
+
+.audio-form {
+  text-align: center;
+  margin-top: 15px;
+  @include font ($style: normal, $weight: 500, $size: 2.4rem, $height: 3.2rem);
+  
+}
